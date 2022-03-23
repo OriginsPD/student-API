@@ -1,0 +1,12 @@
+models:
+  Student:
+    firstName: string:400,
+    lastName: string:400,
+    dob: date useCurrent,
+    email: string:100 nullable
+    phone: biginteger
+
+controllers:
+  Api\Student:
+    create:
+      render: student.create

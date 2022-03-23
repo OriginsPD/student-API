@@ -1,0 +1,12 @@
+created:
+    - app/Http/Controllers/Api/StudentController.php
+    - database/factories/StudentFactory.php
+    - database/migrations/2022_03_23_005346_create_students_table.php
+    - app/Models/Student.php
+    - tests/Feature/Http/Controllers/Api/StudentControllerTest.php
+    - resources/views/student/create.blade.php
+updated:
+    - routes/web.php
+models:
+    User: {  }
+    Student: { firstName: 'string:400,', lastName: 'string:400,', dob: 'date useCurrent,', email: 'string:100 nullable', phone: biginteger }
