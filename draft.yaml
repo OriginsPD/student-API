@@ -9,4 +9,5 @@ models:
 controllers:
   Api\Student:
     create:
+    query: all
       render: student.create

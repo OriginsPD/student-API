@@ -17,8 +17,8 @@ class StudentController extends Controller
     public function store(Request $request)
     {
         Student::create([
-            'firstName' => $request->input('fname'),
-            'lastName' => $request->input('lname'),
+            'firstName' => $request->input('firstName'),
+            'lastName' => $request->input('lastName'),
             'dob' => $request->input('dob'),
             'email' => $request->input('email'),
             'phone' => $request->input('phone'),
@@ -35,8 +35,8 @@ class StudentController extends Controller
 
         Student::where('id', $id)
             ->update([
-                'firstName' => $request->input('fname'),
-                'lastName' => $request->input('lname'),
+                'firstName' => $request->input('firstName'),
+                'lastName' => $request->input('lastName'),
                 'dob' => $request->input('dob'),
                 'email' => $request->input('email'),
                 'phone' => $request->input('phone'),
